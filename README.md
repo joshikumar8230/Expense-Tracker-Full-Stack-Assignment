@@ -72,6 +72,52 @@ Filter expenses by category
 
 Responsive layout for mobile, tablet, and desktop
 
+🧪 API Endpoints
+
+Authentication
+
+POST /signup – Register user
+POST /login – Login user (JWT issued)
+
+User Profile
+
+GET /api/users/:id – Fetch logged-in user profile
+PUT /api/users/:id/update-password – Update password
+POST /api/users/verify-password – Verify current password
+
+Expenses
+
+POST /api/expenses – Create expense
+GET /api/expenses – Get all expenses
+GET /api/expenses/:id – Get single expense
+PUT /api/expenses/:id – Update expense
+DELETE /api/expenses/:id – Delete expense
+
+🧾 Environment Variables (.env)
+
+PORT=8080
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+
+▶️ Running the Project Locally
+
+Backend
+
+PS K:\Expense Tracker – Full Stack Assignment\Expense Tracker – Full Stack Assignment\Backend> node app.mjs 
+[dotenv@17.2.3] injecting env (3) from .env -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+Server running on http://localhost:8080
+MongoDB connected
+
+Frontend
+
+PS K:\Expense Tracker – Full Stack Assignment\Expense Tracker – Full Stack Assignment\Frontend\src> npm run dev
+> expense@0.0.0 dev
+> vite
+  VITE v7.2.4  ready in 475 ms
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+
 📈 Scalability Notes (Production Readiness)
 
 To scale this application for production:
