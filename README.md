@@ -17,6 +17,7 @@ Log out securely
 The application is designed with scalability, security, and clean architecture in mind.
 
 🧩 Tech Stack
+
 Frontend
 
 React.js
@@ -70,6 +71,7 @@ Filter expenses by category
 Responsive layout for mobile, tablet, and desktop
 
 🧪 API Endpoints
+
 Authentication
 
 POST /signup – Register user
@@ -98,20 +100,22 @@ DELETE /api/expenses/:id – Delete expense
 
 🧾 Environment Variables (.env)
 PORT=8080
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
+MONGO_URI=mongodb+srv://joshikumar_db_user:joshikumar@experiment.tbgezqb.mongodb.net/expenseTracker
+JWT_SECRET=Primetrade.ai
 
 ▶️ Running the Project Locally
-Backend
-node app.mjs
 
+Backend
+
+node app.mjs
 [dotenv@17.2.3] injecting env (3) from .env
 Server running on http://localhost:8080
 MongoDB connected
 
-Frontend
-npm run dev
 
+Frontend
+
+npm run dev
 VITE v7.2.4  ready in 475 ms
 ➜  Local:   http://localhost:5173/
 ➜  Network: use --host to expose
